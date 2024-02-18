@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #eee;
+}
+
+/*header*/
+header{
+    width: 100%; background-color: rgb(153, 0, 0); padding: 10px 100px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; position: fixed; top: 0;
+}
+.webLogo{
+    float: left; width: 30%;
+}
+.webLogo h1{
+    font-size: 40px; margin: 2px auto; color: white;
+}
+nav{
+    float: left; width: 70%;
+}
+nav ul{
+    list-style-type: none; margin: 0; padding: 0; float: right;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a:link, nav ul li a:active{
+    display: block; padding: 10px 20px; color: white; text-decoration: none; font-size: 20px;
+}
+
+/*Section*/
+section{
+    height: 500px;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
