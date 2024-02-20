@@ -25,17 +25,90 @@ nav ul{
 nav ul li{
     display: inline-block;
 }
-nav ul li a:link, nav ul li a:active{
-    display: block; padding: 10px 20px; color: white; text-decoration: none; font-size: 20px;
+nav ul li a:link, nav ul li a:visited{
+    display: block; padding: 10px 20px; color: #eee; text-decoration: none; font-size: 20px;
+}
+nav ul li a:hover{
+    color: black;
 }
 
 /*Section*/
 section{
-    height: 500px;
+    height: auto;
+}
+article.main-top{
+    color: rgb(121, 1, 1); background-color: rgba(238, 191, 2, 0.748); min-height: 600px; padding: 150px 0 100px 130px; font-family: arial;
+}
+article.main-top h2{
+    font-size: 40px;
+}
+article.main-top p{
+    width: 320px; font-size: 20px; word-spacing: 10px; line-height: 1.5; margin-top: 40px;
+}
+#contact-bt{
+    color: white; background-color: rgb(227, 69, 69); margin-top: 20px; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px;
+}
+
+/*Article : about*/
+#about{
+    min-height: 600px; padding: 100px 0;
+}
+#about-image{
+    height: 600px; width: 50%; float: left;
+}
+#about-image-box{
+    border: 1px solid black; border-radius: 5px; width: 340px; height: 600px; margin: auto; padding: 10px;
+}
+#about-image-box img{
+    border: 1px solid gray;
+}
+#about-details{
+    width: 50%; float: left; min-height: 600px; padding: 150px 0;
+}
+#about-details h3{
+    font-size: 35px; color: tomato;
+}
+#about-details p{
+    width: 340px; word-spacing: 10px; line-height: 1.5;
+}
+#readmore-bt{
+    padding: 10px 20px; margin-top: 30px; border-radius: 5px; border: 1px solid gray;
+}
+
+/*Article : our prdouct*/
+#ourDesign{
+    border: 1px solid; text-align: center;
+}
+#design-model{
+    overflow-x: auto;
+}
+.model-box{
+    width: 350px; height: 450px; margin: 10px; border: 1px solid gray; border-radius: 8px; float: left;
 }
 
 .clearfix::after{
     content: "";
     clear: both;
     display: table;
+}
+@media screen and (max-width: 1000px){
+    /*article.main-top{
+        padding: 200px 0 100px 100px;
+    }*/
+}
+@media screen and (max-width: 600px){
+    article.main-top{
+        padding-left: 40px;
+    }
+    #about-image, #about-details{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px){
+    header{
+        padding-right: 5px;
+    }
+    nav ul li{
+        display: block;
+    }
 }
