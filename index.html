@@ -18,7 +18,7 @@
         </div>
         <nav>
             <ul>
-                <li> <a href="#index.html">Home</a> </li>
+                <li> <a href="/index.html">Home</a> </li>
                 <li> <a href="#about">About</a> </li>
                 <li> <a href="#ourDesign">Our Design</a> </li>
                 <li> <a href="#contact">Contact</a> </li>
@@ -49,43 +49,55 @@
                 </button>
             </div>
         </article>
+
         <article id="ourDesign">
-            <h3>Our Work Furniture</h3>
+            <h3 style="font-size: 30px;">Our Work Furniture</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam explicabo asperiores fugiat cum tenetur</p>
-            <div id="design-model">
-                <div class="clearfix" style="width: 2000px; padding: 20px;">
-                    <div class="model-box">
-                        <h4>Product 1</h4>
-                        <img src="" alt="product-1">
-                        <h5>Price</h5>
-                        <button type="button" onclick="">Buy Now</button>
-                    </div>
-                    <div class="model-box">
-                        <h4>Product 1</h4>
-                        <img src="" alt="product-1">
-                        <h5>Price</h5>
-                        <button type="button" onclick="">Buy Now</button>
-                    </div>
-                    <div class="model-box">
-                        <h4>Product 1</h4>
-                        <img src="" alt="product-1">
-                        <h5>Price</h5>
-                        <button type="button" onclick="">Buy Now</button>
-                    </div>
-                    <div class="model-box">
-                        <h4>Product 1</h4>
-                        <img src="" alt="product-1">
-                        <h5>Price</h5>
-                        <button type="button" onclick="">Buy Now</button>
-                    </div>
-                    <div class="model-box">
-                        <h4>Product 1</h4>
-                        <img src="" alt="product-1">
-                        <h5>Price</h5>
-                        <button type="button" onclick="">Buy Now</button>
-                    </div>
+            <div id="design-model" class="clearfix">
+                <div class="model-box">
+                    <h4>Product 1</h4>
+                    <img src="/assets/img-3.png" alt="product-1" class="img1">
+                    <h5>Price : $300</h5>
+                    <button type="button" onclick="">Buy Now</button>
+                </div>
+                <div class="model-box">
+                    <h4>Product 1</h4>
+                    <img src="/assets/saro.png" alt="product-1" class="img2">
+                    <h5>Price : $400</h5>
+                    <button type="button" onclick="">Buy Now</button>
+                </div>
+                <div class="model-box">
+                    <h4>Product 1</h4>
+                    <img src="/assets/img-5.png" alt="product-1" class="img3">
+                    <h5>Price : $200</h5>
+                    <button type="button" onclick="">Buy Now</button>
                 </div>
             </div>
+        </article>
+
+        <article id="newsletter" class="clearfix">
+            <div class="nLeft column">
+                <img src="/assets/img-6.png" alt="image-6">
+            </div>
+            <div class="nRight column">
+                <h3>Subscribe Newsletter</h3>
+                <input type="email" id="email" name="email" placeholder="your-email@mail.com">
+                <input type="button" value="SUBSCRIBE NOW">
+            </div>
+        </article>
+
+        <article id="contact" class="clearfix">
+            <div class="cForm column">
+                <h3>Contact Us</h3>
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Your-name">
+                    <input type="email" id="emailc" name="emailc" placeholder="your-email@mail.com">
+                    <input type="number" id="number" name="number" placeholder="Phone Number">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <div class="map column"></div>
         </article>
     </section>
     <footer>
