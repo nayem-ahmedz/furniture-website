@@ -36,6 +36,9 @@ nav ul li a:hover{
 section{
     height: auto;
 }
+article{
+    border-bottom: 1px solid rgba(0,0,0, 0.2);
+}
 article.main-top{
     color: rgb(121, 1, 1); background-color: rgba(238, 191, 2, 0.748); min-height: 600px; padding: 150px 0 100px 130px; font-family: arial;
 }
@@ -57,10 +60,10 @@ article.main-top p{
     height: 600px; width: 50%; float: left;
 }
 #about-image-box{
-    border: 1px solid black; border-radius: 5px; width: 340px; height: 600px; margin: auto; padding: 10px;
+    border: 1px solid #abc; border-radius: 5px; width: 350px; height: 600px; margin: auto; padding: 10px;
 }
 #about-image-box img{
-    border: 1px solid gray;
+    padding: 20px;
 }
 #about-details{
     width: 50%; float: left; min-height: 600px; padding: 150px 0;
@@ -77,13 +80,65 @@ article.main-top p{
 
 /*Article : our prdouct*/
 #ourDesign{
-    border: 1px solid; text-align: center;
+    text-align: center; padding: 10px 0 40px;
 }
 #design-model{
-    overflow-x: auto;
+    max-width: 1200px; margin: auto;
 }
 .model-box{
-    width: 350px; height: 450px; margin: 10px; border: 1px solid gray; border-radius: 8px; float: left;
+    width: 350px; height: 480px; margin: 10px; background-color: white; border: 1px solid #abc; border-radius: 8px; float: left;
+}
+.model-box h4{
+    font-size: 22px; font-family: arial;
+}
+.model-box h5{
+    color: red; font-size: 20px;
+}
+.model-box button{
+    padding: 5px 10px; color: brown;
+}
+.img1{
+    width: 200px; height: 250px;
+}
+.img2{
+    width: 310px; height: 250px;
+}
+.img3{
+    width: auto; height: auto;
+}
+
+/*Article : Newsletter*/
+#newsletter{
+    margin: 60px auto;
+}
+.column{
+    width: 50%; float: left; padding: 20px;
+}
+.nLeft img{
+    width: 70%; height: auto; margin: auto; display: block;
+}
+.nRight{
+    text-align: center;
+}
+.nRight h3{
+    font-size: 40px;
+}
+.nRight #email{
+    display: block; margin: auto; padding: 10px; width: 350px; background-color: rgb(195, 189, 189); border: none;
+}
+.nRight input[type="button"]{
+    display: block; padding: 10px 20px; margin: 25px auto; background-color: #d9534f; color: white; border: none; border-radius: 5px;
+}
+
+/* Article: Contact Form and Map */
+.cForm input, .cForm textarea{
+    width: 300px; display: block; padding: 5px; margin: 10px 0;
+}
+.cForm textarea{
+    resize: none; height: 100px;
+}
+.cForm input[type=submit]{
+    width: auto;
 }
 
 .clearfix::after{
@@ -91,17 +146,23 @@ article.main-top p{
     clear: both;
     display: table;
 }
-@media screen and (max-width: 1000px){
-    /*article.main-top{
-        padding: 200px 0 100px 100px;
-    }*/
+@media screen and (max-width: 1024px){
+    .model-box{
+        float: none; margin: 20px auto;
+    }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
     article.main-top{
         padding-left: 40px;
     }
-    #about-image, #about-details{
+    #about-image, #about-details, .column{
         width: 100%;
+    }
+    #about-details{
+        text-align: center; padding: 10px 0; min-height: auto;
+    }
+    #about-details p{
+        margin: auto;
     }
 }
 @media screen and (max-width: 480px){
