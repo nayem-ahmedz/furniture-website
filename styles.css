@@ -10,6 +10,9 @@ body{
 header{
     width: 100%; background-color: rgb(153, 0, 0); padding: 10px 100px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; position: fixed; top: 0;
 }
+.header-icon{
+    width: 50px; height: 50px; display: none;
+}
 .webLogo{
     float: left; width: 30%;
 }
@@ -37,7 +40,7 @@ section{
     height: auto;
 }
 article{
-    border-bottom: 1px solid rgba(0,0,0, 0.2);
+    border-bottom: 1px solid rgba(0,0,0, 0.2); padding: 60px 10px;
 }
 article.main-top{
     color: rgb(121, 1, 1); background-color: rgba(238, 191, 2, 0.748); min-height: 600px; padding: 150px 0 100px 130px; font-family: arial;
@@ -54,7 +57,7 @@ article.main-top p{
 
 /*Article : about*/
 #about{
-    min-height: 600px; padding: 100px 0;
+    min-height: 600px;
 }
 #about-image{
     height: 600px; width: 50%; float: left;
@@ -75,18 +78,18 @@ article.main-top p{
     width: 340px; word-spacing: 10px; line-height: 1.5;
 }
 #readmore-bt{
-    padding: 10px 20px; margin-top: 30px; border-radius: 5px; border: 1px solid gray;
+    padding: 10px 20px; margin-top: 30px; border-radius: 5px; border: 1px solid gray; cursor: pointer;
 }
 
 /*Article : our prdouct*/
 #ourDesign{
-    text-align: center; padding: 10px 0 40px;
+    text-align: center;
 }
 #design-model{
-    max-width: 1200px; margin: auto;
+    max-width: 1096px; margin: auto;
 }
 .model-box{
-    width: 350px; height: 480px; margin: 10px; background-color: white; border: 1px solid #abc; border-radius: 8px; float: left;
+    width: 345px; height: 480px; margin: 10px; background-color: white; border: 1px solid #abc; border-radius: 8px; float: left;
 }
 .model-box h4{
     font-size: 22px; font-family: arial;
@@ -96,6 +99,9 @@ article.main-top p{
 }
 .model-box button{
     padding: 5px 10px; color: brown;
+}
+.model-box button:hover{
+    background-color: blue; color: white; cursor: pointer;
 }
 .img1{
     width: 200px; height: 250px;
@@ -108,9 +114,6 @@ article.main-top p{
 }
 
 /*Article : Newsletter*/
-#newsletter{
-    margin: 60px auto;
-}
 .column{
     width: 50%; float: left; padding: 20px;
 }
@@ -124,21 +127,56 @@ article.main-top p{
     font-size: 40px;
 }
 .nRight #email{
-    display: block; margin: auto; padding: 10px; width: 350px; background-color: rgb(195, 189, 189); border: none;
+    display: block; margin: auto; padding: 10px; width: 300px; background-color: rgb(195, 189, 189); border: none;
 }
 .nRight input[type="button"]{
     display: block; padding: 10px 20px; margin: 25px auto; background-color: #d9534f; color: white; border: none; border-radius: 5px;
 }
+.nRight input[type="button"]:hover, #contact-bt:hover{
+    background-color: rgb(153, 0, 0); color: white; cursor: pointer;
+}
 
 /* Article: Contact Form and Map */
+.form-box{
+    max-width: 360px; margin: auto;
+}
+.form-box h3{
+    font-size: 30px; text-align: center; margin-top: 0; color: rgb(153, 0, 0);
+}
 .cForm input, .cForm textarea{
-    width: 300px; display: block; padding: 5px; margin: 10px 0;
+    width: 100%; display: block; padding: 10px; margin: 10px 0; border: 1px solid gray; border-radius: 5px; font-size: 16px;
 }
 .cForm textarea{
-    resize: none; height: 100px;
+    resize: none; height: 150px;
 }
 .cForm input[type=submit]{
-    width: auto;
+    width: auto; margin: 20px auto;
+}
+.cForm input[type=submit]:hover, #readmore-bt:hover{
+    background-color: rgb(153, 0, 0); color: white;
+}
+#map-frame{
+    width: 600px; height: 450px; border: 1px solid gray;
+}
+
+/* Footer*/
+footer{
+    background-color: rgba(153, 0, 0, 1.0); padding: 20px; color: rgba(255, 255, 255, 0.7); overflow: auto;
+}
+footer h3{
+    color: white; font-weight: bold; font-family: Arial;
+}
+footer ul li{
+    line-height: 2.0;
+}
+footer ul li a:link, footer ul li a:visited{
+    text-decoration: none; color: rgba(255, 255, 255, 0.7);
+}
+footer ul li a:hover{
+    color: white; text-decoration: underline;
+}
+.f-box{
+    width: 25%; float: left;
 }
 
 .clearfix::after{
@@ -149,6 +187,9 @@ article.main-top p{
 @media screen and (max-width: 1024px){
     .model-box{
         float: none; margin: 20px auto;
+    }
+    #map-frame{
+        width: 540px; height: 405px;
     }
 }
 @media screen and (max-width: 768px){
@@ -164,12 +205,30 @@ article.main-top p{
     #about-details p{
         margin: auto;
     }
+    #map-frame{
+        width: 400px; height: 300px;
+    }
+    .f-box{
+        width: 50%;
+    }
 }
 @media screen and (max-width: 480px){
     header{
         padding-right: 5px;
     }
+    nav{
+        position: relative;
+    }
+    nav ul{
+        position: absolute;
+    }
     nav ul li{
         display: block;
+    }
+    #map-frame{
+        width: 95%; height: 300px;
+    }
+    .f-box{
+        width: 100%;
     }
 }
