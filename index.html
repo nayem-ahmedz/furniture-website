@@ -17,6 +17,7 @@
             </h1>
         </div>
         <nav>
+            <img src="/assets/icon1.png" alt="icon-1" class="header-icon">
             <ul>
                 <li> <a href="/index.html">Home</a> </li>
                 <li> <a href="#about">About</a> </li>
@@ -33,7 +34,7 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam doloribus quisquam eaque esse fugiat fuga odio debitis at ducimus laborum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis atque quod fuga soluta dolorum voluptate ullam veritatis aspernatur. Perferendis, quia.
             </p>
-            <button id="contact-bt">Contact us</button>
+            <button id="contact-bt" onclick="document.location='#contact';">Contact us</button>
         </article>
         <article id="about" class="clearfix">
             <div id="about-image">
@@ -88,16 +89,20 @@
 
         <article id="contact" class="clearfix">
             <div class="cForm column">
-                <h3>Contact Us</h3>
-                <form>
+                <div class="form-box">
+                    <h3>Contact Us</h3>
+                    <form>
                     <input type="text" id="name" name="name" placeholder="Your-name">
                     <input type="email" id="emailc" name="emailc" placeholder="your-email@mail.com">
                     <input type="number" id="number" name="number" placeholder="Phone Number">
                     <textarea name="message" placeholder="Message"></textarea>
                     <input type="submit" value="Send">
-                </form>
+                    </form>
+                </div>
             </div>
-            <div class="map column"></div>
+            <div class="map column">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57905.069456743724!2d91.82324767112729!3d24.895701574239048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375055447c89f0ef%3A0xabbbcd8a662762e2!2sMetropolitan%20University%2C%20Sylhet!5e0!3m2!1sen!2sbd!4v1708676575333!5m2!1sen!2sbd" id="map-frame" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </article>
     </section>
     <footer>
@@ -112,7 +117,7 @@
         </div>
         <div class="f-box clearfix">
             <h3>Repair</h3>
-            <ul>
+            <ul style="list-style-type: none; margin: 0; padding: 0;">
                 <li>Broken Chair</li>
                 <li>Broken Woodside</li>
                 <li>Removed nutshell</li>
@@ -122,6 +127,7 @@
             </ul>
         </div>
         <div class="f-box clearfix">
+            <h3>Social Media</h3>
             <ul>
                 <li> <a href="#">Facebook</a> </li>
                 <li> <a href="#">Twitter</a> </li>
